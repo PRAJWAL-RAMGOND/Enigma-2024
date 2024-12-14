@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy/Sell Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+        .buy-btn {
+            background-color: green;
+        }
+        .sell-btn {
+            background-color: red;
+        }
+    </style>
+    <script>
+        function handleOption(option) {
+            alert(option + " option selected!");
+        }
+    </script>
+</head>
+<body>
+    <h1>Choose Your Option</h1>
+    <button class="btn buy-btn" onclick="handleOption('Buy')">Buy</button>
+    <button class="btn sell-btn" onclick="handleOption('Sell')">Sell</button>
+</body>
+</html>
